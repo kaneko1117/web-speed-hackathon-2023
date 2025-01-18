@@ -35,13 +35,15 @@ export const OrderForm: FC<Props> = ({ onSubmit }) => {
     if (event.target.value.length !== 7) {
       return;
     }
-    const zipCode = event.target.value;
-    const address = [...(_.cloneDeep(zipcodeJa)[zipCode]?.address ?? [])];
-    const prefecture = address.shift();
-    const city = address.join(' ');
+    setTimeout(() => {
+      const zipCode = event.target.value;
+      const address = [...(_.cloneDeep(zipcodeJa)[zipCode]?.address ?? [])];
+      const prefecture = address.shift();
+      const city = address.join(' ');
 
-    formik.setFieldValue('prefecture', prefecture);
-    formik.setFieldValue('city', city);
+      formik.setFieldValue('prefecture', prefecture);
+      formik.setFieldValue('city', city);
+    });
   };
 
   return (
