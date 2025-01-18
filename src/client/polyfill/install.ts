@@ -1,6 +1,7 @@
 import 'core-js';
 import 'setimmediate';
-import 'date-time-format-timezone';
+// IE11のためのものなので一旦削除
+// import 'date-time-format-timezone';
 import './temporal';
 
 declare global {

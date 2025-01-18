@@ -44,9 +44,6 @@ importers:
       currency-formatter:
         specifier: 1.5.9
         version: 1.5.9
-      date-time-format-timezone:
-        specifier: 1.0.22
-        version: 1.0.22
       formik:
         specifier: 2.2.9
         version: 2.2.9(react@18.3.1)
@@ -1610,9 +1607,6 @@ packages:
   date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
-
-  date-time-format-timezone@1.0.22:
-    resolution: {integrity: sha512-4hEeKPpNlbFO05ldht9FwJEy2g1xL7kU3dTPY5hNSd1AyMjrrIeUS54kSWgt/KdttYshhjDMIonU+vCmL4NjVw==}
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -5826,8 +5820,6 @@ snapshots:
   date-fns@2.30.0:
     dependencies:
       '@babel/runtime': 7.26.0
-
-  date-time-format-timezone@1.0.22: {}
 
   debug@2.6.9:
     dependencies:
