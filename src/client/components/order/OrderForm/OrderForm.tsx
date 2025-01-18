@@ -32,7 +32,9 @@ export const OrderForm: FC<Props> = ({ onSubmit }) => {
 
   const handleZipcodeChange: ChangeEventHandler<HTMLInputElement> = (event) => {
     formik.handleChange(event);
-
+    if (event.target.value.length !== 7) {
+      return;
+    }
     const zipCode = event.target.value;
     const address = [...(_.cloneDeep(zipcodeJa)[zipCode]?.address ?? [])];
     const prefecture = address.shift();
