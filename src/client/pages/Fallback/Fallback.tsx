@@ -1,11 +1,10 @@
-import type { FC } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { Layout } from '../../components/application/Layout';
 
 import * as styles from './Fallback.styles';
 
-export const Fallback: FC = () => (
+export const Fallback = () => (
   <>
     <Helmet>
       <title>エラーが発生しました</title>
